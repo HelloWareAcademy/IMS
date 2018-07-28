@@ -1,0 +1,42 @@
+﻿@model IMS_2018_07_25.Models.Markup
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Markup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Item.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarkupPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarkupPercentage)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
